@@ -1,0 +1,137 @@
+<!-- You'll create a trivia form with multiple choice or true/false options (your choice).
+
+The player will have a limited amount of time to finish the quiz.
+
+The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+Don't let the player pick more than one answer per question.
+
+Don't forget to include a countdown timer.
+
+1. -->
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>trivia-game-quiz</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+
+
+<!-- 1. body image for background
+2. jumbotron for tital - Totally Trivia.
+3. creat a timmer
+4. creat questions - display in the iner html
+5. user can only click on  one option
+6. the answers are stored until game is over and used a callback
+7. there will be three options
+8. There will be an onclick button for the answers
+9. when done the computer calculates the amount you get right
+10. if user runs out of time, show result
+11. if finished click on done button
+12. show results -->
+start buttun on load on sbmitt, emty the start button output name apend
+
+
+<body>
+  <div class="background-image">
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-3">Herbs & Spices Trivia Game!</h1>
+
+        <div class="first screen">
+        </div>
+
+        <hr class="my-4">
+
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Start Button</a>
+        </p>
+        <div id="quizQuestions">
+          <h2>How many can you get right?</h2>
+        </div>
+
+
+
+        <div id="start_button">
+                </div>
+                <div id="game_timer">
+                </div>
+        <form id="quiz" name="quiz">
+          <p>1. One of the most commonly used herbs in Italian cooking?</p>
+          <input type="radio" id="mc" name="question1" value="cinnamon"> carrot<br>
+          <input type="radio" id="mc" name="question1" value="cinnamon"> basil<br>
+          <input type="radio" id="mc" name="question1" value="cinnamon"> spice<br>
+          <input type="radio" id="mc" name="question1" value="cinnamon"> graviola<br>
+
+          <p>2. what is an Ethiopian spice blend used to season many Ethiopian dishes?</p>
+          <input type="radio" id="mc" name="question2" value="cinnamon"> curry<br>
+          <input type="radio" id="mc" name="question2" value="cinnamon"> ct36<br>
+          <input type="radio" id="mc" name="question2" value="cinnamon"> berbere<br>
+          <input type="radio" id="mc" name="question2" value="cinnamon"> roseHips<br>
+
+          <p>3. This spice is cut streight from a tree, and is used as an ingredient to make things from desserts to toothpaste.</p>
+          <input type="radio" id="mc" name="question3" value="cinnamon"> fraiser<br>
+          <input type="radio" id="mc" name="question3" value="cinnamon"> mint<br>
+          <input type="radio" id="mc" name="question3" value="cinnamon"> peppermint<br>
+          <input type="radio" id="mc" name="question3" value="cinnamon"> cinnamon<br>
+          <hr>
+          <input id="button" type="button" value="Done" onclick="check();">
+
+        </form>
+        <br>
+        <div id="after_submit">
+
+          <p id="message"></p>
+          <p id="number of correct"></p>
+          <img id="picture">
+        </div>
+
+
+
+        <!-- <div id="results">
+        </div>
+
+        <div id="correctAnswers">
+          <h2>Correct Answers</h2>
+        </div>
+
+        <div id="unansweredQuestions">
+          <h2>Unanswered Questions</h2>
+        </div>
+
+        <div id="incorrectAnswers">
+          <h2>Incorrect Answers</h2>
+        </div>
+
+        <button id="submit">Done</button> -->
+
+      </div>
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <script src="assets/javascript/app.js"></script>
+    </div>
+  </div>
+  </div>
+</body>
+
+
+
+
+</html>
